@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', (request, response) => {
-    return response.send("<h1>servidor está ok</h1>");
+    return response.send("Servidor está ok");
 });
 
 app.post('/', (request, response) => {
@@ -42,4 +42,4 @@ app.post('/', (request, response) => {
     );
 });
 
-app.listen(3333);
+app.listen(80);
