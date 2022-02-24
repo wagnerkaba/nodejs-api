@@ -5,6 +5,10 @@ const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.get('/', (request, response) => {
+    return response.send("<h1>servidor está ok</h1>");
+});
+
 app.post('/', (request, response) => {
 
     const resposta = request.body;
