@@ -2,6 +2,9 @@ const { response } = require('express');
 const express = require('express');
 const bodyParser = require('body-parser');
 
+const https = require('https')
+const http = require('http')
+
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -42,4 +45,5 @@ app.post('/', (request, response) => {
     );
 });
 
-app.listen(3333);
+http.createServer(app).listen(80)
+https.createServer(app).listen(443)
