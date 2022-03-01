@@ -25,7 +25,7 @@ app.post('/', (request, response) => {
         <body>
             <main class="main-cadastro">
                 <h1 class="titulo">Olá ${resposta.nome}!</h1>
-                <p>Muito obrigado por preencher o cadastro!</p>¨
+                <p>Muito obrigado por preencher o cadastro!</p>
                 <p>Aqui estão os dados que você digitou:</p>
         
                 <p>Email: ${resposta.email}</p>
